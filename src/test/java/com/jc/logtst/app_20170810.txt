@@ -1,0 +1,15 @@
+NANO_SECS|DATE_STAMP|LOG_LEVEL|CLASS_FIELD_INFO|MESSAGE
+31044455289645|2017-08-10 17:10:19:716|SEVERE|LoggerTest.testLogging(46)|This is a SEVERE error message.
+31044456395012|2017-08-10 17:10:19:716|INFO|LoggerTest.testLogging(49)|This is an INFO message.
+31044456726471|2017-08-10 17:10:19:716|CONFIG|LoggerTest.testLogging(52)|This is a CONFIG message.
+31044457020298|2017-08-10 17:10:19:716|FINER|LoggerTest.testLogging(55)|This is a FINER message.
+31044457504181|2017-08-10 17:10:19:716|SEVERE|LoggerTest.testLogging(67)|I said... hello how are you?
+31044480719933|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(71)|Exception thrown. Something terrible just happened!
+31044481075338|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(77)|NullPointerException thrown. 
+31044481325832|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(84)|TestCustomException thrown. Howdy ho ho... and hi!
+31044481545537|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(90)|Exception thrown. Something else terrible just happened! Oh my goodness what was it?
+31044481768663|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(96)|NullPointerException thrown.  Oh no a NPE!
+31044481982286|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(104)|TestCustomException thrown. Howdy ho ho... and hi! This is just not right!
+31044482238862|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(109)|IllegalArgumentException thrown. 
+31044482465789|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(116)|IllegalArgumentException thrown. timeout value is negative is an illegal argument.
+31044482767979|2017-08-10 17:10:19:748|SEVERE|LoggerTest.testLogging(122)|No exception object was supplied.

@@ -1,0 +1,161 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jc</groupId>
+	<artifactId>jc-commons</artifactId>
+	<version>1.1.003</version>
+	<name>Toolbox</name> 
+	 
+	<properties>
+		<java.version>1.7</java.version>
+		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+
+		<servlet.version>3.1.0</servlet.version>
+		<shiro.version>1.2.3</shiro.version>
+		<apacheCommonsLogging.version>1.2</apacheCommonsLogging.version>
+		<json.version>20170516</json.version>
+		<apacheCommonsCodec.version>1.9</apacheCommonsCodec.version>
+		<rest-ws.version>2.25.1</rest-ws.version>
+		<jsf.version>2.2.14</jsf.version>
+		<primefaces.version>5.3</primefaces.version>
+		<mysql.version>5.1.34</mysql.version>
+		<hibernateCore.version>5.0.12.Final</hibernateCore.version>
+		<dbConnectionPool.version>0.9.5</dbConnectionPool.version>
+		<jbossWeld.version>2.1.0.Final</jbossWeld.version>	
+		<poi.version>3.9</poi.version>
+	</properties>
+  
+	<dependencies>	
+	
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
+		</dependency>
+
+
+	    <!-- Shiro -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<!-- Apache Commons Logging - Required by Shiro -->
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>${apacheCommonsLogging.version}</version>
+		</dependency>
+		
+		
+		<!-- JSON.org -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>${json.version}</version>
+		</dependency>
+
+
+		<!-- Apache Commons - BASE64 Codec -->
+		<dependency>
+    		<groupId>commons-codec</groupId>
+    		<artifactId>commons-codec</artifactId>
+    		<version>${apacheCommonsCodec.version}</version>
+		</dependency>
+
+
+		<!-- POI (Excel) -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		
+		
+		<!-- REST Services -->
+		<dependency>
+		    <groupId>org.glassfish.jersey.containers</groupId>
+		    <artifactId>jersey-container-servlet</artifactId>
+		    <version>${rest-ws.version}</version>
+		</dependency>
+		
+		<!-- 
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>2.19</version>
+		</dependency>		
+		 -->
+
+
+		<!-- JSF Implementation -->
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>${jsf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>${jsf.version}</version>
+		</dependency>
+	
+	
+		<!-- PrimeFaces - JSF UI Framework -->
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>${primefaces.version}</version>
+		</dependency>
+
+
+		<!-- MySQL - Database Driver -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		
+		
+		<!-- Hibernate - JPA Implementation -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernateCore.version}</version>
+		</dependency>
+		<!-- DB Connection Pooling -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${dbConnectionPool.version}</version>
+		</dependency>
+		
+		
+		<!-- JBoss Weld - Context and Dependency Implementation -->
+		<dependency>
+			<groupId>org.jboss.weld.servlet</groupId>
+			<artifactId>weld-servlet</artifactId>
+			<version>${jbossWeld.version}</version>
+		</dependency>		
+		
+	</dependencies>
+  
+	<build>
+	  <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>${maven-compiler-plugin.version}</version>
+			<configuration>
+				<source>${java.version}</source>
+				<target>${java.version}</target>
+			</configuration>
+		</plugin>
+	  </plugins>
+	</build>
+</project>
